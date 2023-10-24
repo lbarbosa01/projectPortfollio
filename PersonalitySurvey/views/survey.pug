@@ -1,0 +1,16 @@
+include layouts/layoutBS
+
+.body.border.border-dark.container-fluid.content
+    h2 #{pageTitle}
+    form(action='/data' method='post')
+        table.table.table-responsive
+            each q in questions
+                tr
+                    td
+                        label(for=`${q.id}`) #{q.q}
+                    td
+                        select.form-control.dropdown.dropdown-toggle(type="button" name=`${q.id}` id=`${q.id}` data-toggle="dropdown" cat=`${q.cat}`)
+                            option(value='0' selected='selected') A little
+                            option(value='1') Sometimes
+                            option(value='2') As much as possible
+        button.btn.bg-primary.offset-9(type='submit') Submit

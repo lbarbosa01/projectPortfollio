@@ -1,0 +1,19 @@
+include layouts/layoutBS
+
+.body.border.border-dark.container-fluid.content
+    h2 #{pageTitle}
+    table.table.table-striped
+        thead
+            tr
+                th Personality Type
+                th Total Points
+                th Percent
+                th Description
+        tbody
+            each c in categories
+                tr
+                    td(style=`background-color : ${c.color}`)= c.cat
+                    td(style=`background-color : ${c.color}`)= c.points
+                    td(style=`background-color : ${c.color}`) #{c.percentage}%
+                    td= c.desc
+    a(href='/survey') Retake Survey

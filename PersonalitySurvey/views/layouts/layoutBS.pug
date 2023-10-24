@@ -1,0 +1,27 @@
+head
+    title  HW2CSC3700
+    link(href='/css/bootstrap.css' rel='stylesheet')
+    link(href='/css/bootstrap-grid.css' rel='stylesheet')
+    link(href='/css/bootstrap-reboot.css' rel='stylesheet')
+    link(href='/css/bootstrap-utilities.css' rel='stylesheet')
+    link(href='/css/main.css' rel='stylesheet')
+    script(src='/js/bootstrap.js' type='application/javascript')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+// Navigation
+nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top
+    .container
+        img(src='imgs/logo.png')
+        ul.navbar-nav.ms-auto
+            li.nav-item
+                if from == 'survey'
+                    a.nav-link.active(href='/survey') Home
+                else
+                    a.nav-link(href='/survey') Home
+            li.nav-item
+                if from == 'about'
+                    a.nav-link.active(href='/about') About
+                else
+                    a.nav-link(href='/about') About
+h1.fw-bold.offset-2.mt-5 Personality Perfect

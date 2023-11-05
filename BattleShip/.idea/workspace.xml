@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -31,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/barbo/WebstormProjects/CSC3700/HW/HW1",
+    "last_opened_file_path": "C:/Users/barbo/OneDrive/Documents/GitHub/projectPortfollio/PersonalitySurvey",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,6 +60,7 @@
       <workItem from="1669732843927" duration="11000" />
       <workItem from="1698180308088" duration="465000" />
       <workItem from="1698180833131" duration="3136000" />
+      <workItem from="1699222449292" duration="357000" />
     </task>
     <servers />
   </component>

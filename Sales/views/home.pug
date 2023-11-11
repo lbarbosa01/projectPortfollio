@@ -1,0 +1,44 @@
+include layouts/mainLayout
+
+.container
+    div.row
+        table.table.table-striped.table-bordered.topCustomers.col-3
+            thead.table-primary
+                tr
+                    th(colspan='3' style="text-align: center") Top Customers
+            tbody
+                each i, index in table1
+                    if index + 1 < 6
+                        tr
+                            td= index + 1
+                            td= i.CustomerName
+                            td $#{i.TotalSales}
+        table.table.table-striped.offset-1.table-bordered.topCustomers.col-3
+            thead.table-primary
+                tr
+                    th(colspan='3' style="text-align: center") Top Products
+            tbody
+                each i, index in table2
+                    if index + 1 < 6
+                        tr
+                            td= index + 1
+                            td= i.ItemName
+                            td $#{i.TotalSales}
+        table.table.table-striped.offset-1.table-bordered.topCustomers.col-3
+            thead.table-primary
+                tr
+                    th(colspan='3' style="text-align: center") Sales
+            tbody
+                each i, index in table3
+                    if index + 1 < 6
+                        tr
+                            td= index + 1
+                            td= i.Date
+                            td $#{i.TotalSales}
+    div.row
+        form.col-3( method='get' action='/customers')
+            button( type='submit' class='btn btn-primary' style="margin-right: 10%") Show All
+        form.col-3.offset-1( method='get' action='/items')
+            button( type='submit' class='btn btn-primary' style="margin-right: 10%") Show All
+        form.col-3.offset-1( method='get' action='/sales')
+            button( type='submit' class='btn btn-primary' style="margin-right: 10%") Show All

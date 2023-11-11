@@ -1,0 +1,19 @@
+include ../layouts/mainLayout
+
+.container
+    h1.mt-4
+    if items.length == 0
+        h2 Sorry no Products
+    else
+        table.table.table-striped.offset-3.table-bordered(style="max-width: 40%")
+            thead.table-primary
+                tr
+                    th(scope='col') Product
+                    th(scope='col') Total Sales
+            tbody
+                each i in items
+                    tr
+                        td= i.ItemName
+                        td $#{i.TotalSales}
+        form( method='get' action='/add-item')
+            button( type='submit' class='btn btn-primary' style="margin-right: 10%") Add New Item

@@ -1,0 +1,60 @@
+head
+    title  My App
+    link(href='/css/bootstrap.css' rel='stylesheet')
+    link(href='/css/main.css' rel='stylesheet')
+    script(src='/js/bootstrap.js' type='application/javascript')
+// Navigation
+nav.navbar.navbar-expand-lg.navbar-dark.static-top(style="background-color: #64a9c4; height: 15%")
+    .container
+        a.navbar-brand
+            img(src='/imgs/logo.png' alt='My Logo' height='68')
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        p.subTitle Happy Harry's Hardware
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto
+                if from == 'Home'
+                    li.nav-item
+                        a.nav-link(aria-current='page' href='/home' style="font-weight: bold") Home
+                    li.nav-item
+                        a.nav-link(href='/customers') Customers
+                    li.nav-item
+                        a.nav-link(href='/items') Products
+                    li.nav-item
+                        a.nav-link(href='/sales') Sales
+                else if from == 'Customers'
+                    li.nav-item
+                        a.nav-link(href='/home') Home
+                    li.nav-item
+                        a.nav-link(aria-current='page' href='/customers' style="font-weight: bold") Customers
+                    li.nav-item
+                        a.nav-link(href='/items') Products
+                    li.nav-item
+                        a.nav-link(href='/sales') Sales
+                else if from == 'Products'
+                    li.nav-item
+                        a.nav-link(href='/home') Home
+                    li.nav-item
+                        a.nav-link( href='/customers') Customers
+                    li.nav-item
+                        a.nav-link(aria-current='page' href='/items' style="font-weight: bold") Products
+                    li.nav-item
+                        a.nav-link(href='/sales') Sales
+                else if from == 'Sales'
+                    li.nav-item
+                        a.nav-link(href='/home') Home
+                    li.nav-item
+                        a.nav-link( href='/customers') Customers
+                    li.nav-item
+                        a.nav-link(href='/items') Products
+                    li.nav-item
+                        a.nav-link(aria-current='page' href='/sales' style="font-weight: bold") Sales
+                else
+                    li.nav-item
+                        a.nav-link(href='/home') Home
+                    li.nav-item
+                        a.nav-link( href='/customers') Customers
+                    li.nav-item
+                        a.nav-link(href='/items') Products
+                    li.nav-item
+                        a.nav-link(href='/sales') Sales

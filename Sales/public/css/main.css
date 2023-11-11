@@ -1,0 +1,43 @@
+body {
+    background-color: #ffad00;
+}
+
+.nav-link {
+    background-color: #ffb703;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+a {
+    margin-left: 20px;
+}
+
+.subTitle {
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+    color: white;
+}
+
+table {
+    max-width: 65%;
+}
+
+form {
+    text-align: center;
+}
+
+.form-group {
+    max-width: 40%;
+}
+
+label {
+    float: left;
+    font-size: 20px;
+}
+
+.topCustomers {
+    max-width: 25%;
+    margin-top: 3%;
+}

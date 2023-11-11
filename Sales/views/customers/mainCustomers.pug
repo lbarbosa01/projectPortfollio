@@ -1,0 +1,25 @@
+include ../layouts/mainLayout
+
+.container
+    h1.mt-4
+    if customers.length == 0
+        h2 Sorry no customers
+    else
+        table.table.table-striped.offset-2.table-bordered
+            thead.table-primary
+                tr
+                    th(scope='col') Name
+                    th(scope='col') Email
+                    th(scope='col') Total Sales
+                    th(scope='col' style='text-align: center') Update
+            tbody
+                each c in customers
+                    tr
+                        td= c.CustomerName
+                        td= c.CustomerEmail
+                        td $#{c.TotalSales}
+                        td
+                            form( method='get' action='editInfo/' + c.CustomerID)
+                                button( type='submit' class='btn btn-primary') Update
+        form( method='get' action='/add-customer' )
+            button( type='submit' class='btn btn-primary') Add New Customer

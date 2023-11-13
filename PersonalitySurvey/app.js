@@ -11,7 +11,6 @@ const http = require("http");
 app.use( bodyParser.urlencoded({extended: false})); // middleware for body
 app.use( express.static( path.join(__dirname, 'public')));
 app.use( surveyRoutes);
-
 app.get('*', function(req, res){
     let pt = "Page Not Found!";
     res.render('notFound', {
@@ -21,7 +20,7 @@ app.get('*', function(req, res){
 });
 
 
-let port = 3002;
+let port = 3003;
 const server = http.createServer(app);
 server.listen( port );
 console.log( `Listening on http://localhost:${port}`);

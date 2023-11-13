@@ -1,12 +1,15 @@
 body {
-    background-color: #ffad00;
+    background-color: #006295;
 }
 
 .nav-link {
-    background-color: #ffb703;
+    background-color: #D4B474;
     color: black;
     font-size: 18px;
     padding: 5px;
+}
+.logo {
+    max-width: 35%;
 }
 
 a {
@@ -14,12 +17,13 @@ a {
 }
 
 .subTitle {
-    position: relative;
-    left: 25%;
-    font-size: 20px;
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nameTitle {
     color: white;
 }
-
 table {
     max-width: 65%;
 }

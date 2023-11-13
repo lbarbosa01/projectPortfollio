@@ -4,13 +4,18 @@ head
     link(href='/css/main.css' rel='stylesheet')
     script(src='/js/bootstrap.js' type='application/javascript')
 // Navigation
-nav.navbar.navbar-expand-lg.navbar-dark.static-top(style="background-color: #64a9c4; height: 15%")
+nav.navbar.navbar-expand-lg.navbar-dark.static-top(style="background-color: #231F20; height: 18%")
     .container
-        a.navbar-brand
-            img(src='/imgs/logo.png' alt='My Logo' height='68')
-        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-        p.subTitle Happy Harry's Hardware
+        div.col-3
+            a.navbar-brand
+                img.logo(src='/imgs/logo.png' alt='My Logo')
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+        div.col3
+            p.subTitle
+                span(style="color:#D4B474") Harry's
+                span(style="color:#231F20") -
+                span(style="color:white") Hardware
         #navbarSupportedContent.collapse.navbar-collapse
             ul.navbar-nav.ms-auto
                 if from == 'Home'

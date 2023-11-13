@@ -1,5 +1,6 @@
 // Lemar Barbosa
-// Query Sales Information Program
+// This program retrieves certain sales information based on the query selected from the menu.
+// Link to User Guide: https://github.com/lbarbosa01/projectPortfollio/blob/main/JDBCQueries/userGuide
 
 import java.sql.*; import java.util.*;
 public class Main {

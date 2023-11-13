@@ -1,0 +1,28 @@
+User Guide
+      Step 1) The program will prompt the user for their username, password, and the name of the database 
+they would like to access. If all credentials are correct (in this case: lbarbosa01, 995919, hw3lbarbosa01), the 
+user should see the statement: “Connection Established.”
+      Step 2) Once the connection is established, a menu with several options will be shown. The purpose for 
+this menu is to show certain sales information based on the queries the user wants to run. To select a certain
+option, the user must enter the number to the left of the option. After selecting a query, the query results will be 
+shown and the menu will appear again, allowing the user to select a different option. If an invalid number is 
+entered, the menu will reappear. Entering any invalid characters in the menu or Query1 and Query2 will cause 
+an input error, ending the program. 
+Menu Options:
+      [1]Query1– This option shows all the supplier information for any supplied product. Once the 
+       query is selected, the user must enter a Product ID (example: 110). The id, name, 
+       rating, and storage of all suppliers who supply that product will be shown. 
+      [2]Query2 – This option shows all the Product IDs and Supplier IDs for any product that costs 
+       less than a given value. Once the query is selected, the user must enter a cost value
+       (example: 33.99). When a value is entered, a list of Product IDs of products that cost 
+       less than the entered value and the Supplier IDs that supply that product will appear.
+      [3]Query7 – This option shows the widget information for any widget with no customer orders. 
+       The widget id, description, parts, and condition will be shown for any widgets that 
+       have no customer orders. 
+      [4]Query9 – This option shows the total amount of widgets ordered for each widget. The Widget 
+       ID and the total widgets ordered for that widget will appear. 
+      [5]Query10 – This option shows the number of widgets responsible for shipping a widget to a 
+       customer. The Customer ID and the total number of warehouses responsible for 
+       shipping to that customer will be shown. 
+      [6]Exit Program – This option will leave the menu and stop the program. Once selected, this 
+       option will show “Exited Program.”

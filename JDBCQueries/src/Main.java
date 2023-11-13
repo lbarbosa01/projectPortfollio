@@ -90,15 +90,12 @@ public class Main {
             System.out.println("Can't load driver");
         }
         try {
-//            System.out.println("Starting Connection........");
-//            Connection con = DriverManager.getConnection("jdbc:mysql://161.35.177.175/hw3lbarbosa01",
-//                    "lbarbosa01", "995919");
             Scanner scan = new Scanner(System.in);
-            System.out.println("Enter Username: ");
+            System.out.println("Enter Username: "); // username: lbarbosa01
             String user = scan.nextLine();
-            System.out.println("Enter Password: ");
+            System.out.println("Enter Password: "); // password: 995919
             String password = scan.nextLine();
-            System.out.println("Enter Database Name: ");
+            System.out.println("Enter Database Name: "); // database: hw3lbarbosa01
             String database = scan.nextLine();
             Connection con = DriverManager.getConnection("jdbc:mysql://161.35.177.175/" + database,
                     user, password);

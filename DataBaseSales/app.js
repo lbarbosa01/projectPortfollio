@@ -1,14 +1,15 @@
+// This program retrieves sales information from a database from phpmyadmin
 const express = require("express");
 const app = express();
-app.set( 'view engine', 'pug'); // set engine
-app.set( 'views', 'views'); // set views
+app.set( 'view engine', 'pug');
+app.set( 'views', 'views');
 
 const bodyParser = require("body-parser");
 const path = require("path");
 const http = require("http");
 const menuRoutes = require("./routes/menu");
 
-app.use( bodyParser.urlencoded({extended: false})); // middleware for body
+app.use( bodyParser.urlencoded({extended: false}));
 app.use( express.static( path.join(__dirname, 'public')));
 app.use( menuRoutes.routes);
 app.get('*', function(req, res){

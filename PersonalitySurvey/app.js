@@ -1,4 +1,5 @@
-// This app
+// This app calculates data from survey answers and shows survey results based
+// on the answers and data from a model (results and model data were not researched)
 
 const express = require("express");
 const app = express();
@@ -10,7 +11,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const http = require("http");
 
-app.use( bodyParser.urlencoded({extended: false})); // middleware for body
+app.use( bodyParser.urlencoded({extended: false}));
 app.use( express.static( path.join(__dirname, 'public')));
 app.use( surveyRoutes);
 app.get('*', function(req, res){

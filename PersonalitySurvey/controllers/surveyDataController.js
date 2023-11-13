@@ -1,7 +1,4 @@
-// Controllers
-const questions = require("../models/surveyDataModel");
-const categories = require("../models/surveyCatModel");
-const MAX_PTS = require("../models/surveyMaxModel");
+const {categories, questions,MAX_PTS} = require("../models/surveyCatModel");
 let results = [];
 
 exports.getQuery = (req,res, next) => {

@@ -1,0 +1,47 @@
+
+.link {
+    font-weight: bolder;
+    font-size: 120%;
+    padding: 5px;
+}
+.logo {
+    max-width: 60%;
+}
+
+a {
+    margin-left: 20px;
+}
+
+.subTitle {
+    margin-top: 7%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nameTitle {
+    color: white;
+}
+table {
+    max-width: 65%;
+}
+th {
+    color: #D4B474 !important;
+    text-align: center !important;
+}
+
+form {
+    text-align: center;
+}
+
+.form-group {
+    max-width: 40%;
+}
+
+label {
+    float: left;
+    font-size: 20px;
+}
+
+.topCustomers {
+    max-width: 25%;
+    margin-top: 3%;
+}
